@@ -1,0 +1,1 @@
+= Globální stav a jeho snapshot

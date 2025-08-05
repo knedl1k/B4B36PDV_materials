@@ -1,0 +1,1 @@
+= Vyloučení procesů, Konsensus

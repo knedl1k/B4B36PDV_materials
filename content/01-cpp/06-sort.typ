@@ -1,0 +1,1 @@
+= Řadící algoritmy, vektorizace

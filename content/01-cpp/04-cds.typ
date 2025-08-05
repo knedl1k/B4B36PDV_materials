@@ -1,0 +1,1 @@
+= Konkurentní datové struktury
