@@ -1,8 +1,13 @@
 # B4B36PDV_materials
 CTU FEE Subject Parallel and distributed computing 
 
+## Links
+- page <https://pdv.pages.fel.cvut.cz/>
+- 2025 playlist <https://youtube.com/playlist?list=PLQL6z4JeTTQk5k12bsaB5eU4fgCwh2ncd>
+- 2024 playlist <https://youtube.com/playlist?list=PLQL6z4JeTTQmEFsy5_n2ZYNSNMPjSUyss>
+- GitLab <https://gitlab.fel.cvut.cz/pdv/pdv.pages.fel.cvut.cz/-/tree/main>
 
-
+## Dir Structure
 ```
 .
 ├── .github/workflows/         # Složka pro automatizaci (CI/CD)
