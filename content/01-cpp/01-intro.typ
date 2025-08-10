@@ -3,8 +3,8 @@
 
 
 == Motivace
-_Proč chceme paralelizovat program?_
-// #figure(
-//   image(""),
-//   Zdroj
-// )
+_Proč chceme paralelizovat?_
+#figure(
+  image("../../assets/images/50-years-processor-trend.png"),
+  caption: [@rupp_microprocessor_trend_data],
+)

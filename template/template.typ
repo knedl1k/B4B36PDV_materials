@@ -10,6 +10,7 @@
     )
     set page(paper: "a4")
     set text(font:"Libertinus Serif", lang:"cs", size:11pt)
+    set heading(numbering: "1.1")
 
     title-page(
         title: meta.title,
@@ -21,7 +22,10 @@
         logo-path: meta.logo,
     )
     
-    set heading(numbering: "1.1")
+    show link: it => {
+        set text(proper-purple)
+        it
+    }
 
 
     toc()

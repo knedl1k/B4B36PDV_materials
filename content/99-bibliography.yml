@@ -1,0 +1,6 @@
+rupp_microprocessor_trend_data:
+  type: Web
+  title: 50 Years of Microprocessor Trend Data
+  author: ["Rupp, Karl"]
+  date: 2021
+  url: { value: https://github.com/karlrupp/microprocessor-trend-data, date: 2020-08-10 } # YYYY-MM-DD

@@ -60,3 +60,6 @@ Then compile using
 ```
 typst watch main.typ --font-path ~/B4B36PDV_materials/assets/fonts
 ```
+
+## Useful Typst links
+- *Hayagriva YAML* bib formatting <https://github.com/typst/hayagriva/blob/main/docs/file-format.md>

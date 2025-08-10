@@ -42,4 +42,4 @@
 }
 
 
-#bibliography("content/99-bibliography.bib")
+#bibliography(style:"ieee","content/99-bibliography.yml")
