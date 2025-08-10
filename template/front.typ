@@ -6,14 +6,14 @@
     university: "",
     faculty: "",
     logo-path: "",
-    use-font: "Technika"
+    use-font: "New Computer Modern"
 ) = {
     set align(center)
     v(2.5cm)
     // university
     text(
         font: use-font,
-        weight: "regular",
+        weight: "semibold",
         size: 14.4pt,
         university
     )
@@ -21,7 +21,7 @@
     // faculty
     text(
         font: use-font,
-        weight: "regular",
+        weight: "semibold",
         size: 14.4pt,
         faculty
     )
@@ -29,11 +29,12 @@
     // main title
     text(
         font: use-font,
-        weight: "regular",
+        weight: "semibold",
         size: 24.88pt,
         title
     )
-    v(1mm)
+    linebreak()
+    linebreak()
     // subtitle
     if subtitle != "" {
         text(
@@ -45,9 +46,10 @@
     }
     v(1.5cm)
     // authors
-    text(size: 12pt, author)
+    text(font: use-font, size: 12pt, author)
     linebreak()
     text(
+        font: use-font,
         size: 12pt, 
         "Praha, " + str(date)
     )
