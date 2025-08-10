@@ -38,10 +38,10 @@
     // subtitle
     if subtitle != "" {
         text(
-        font: use-font,
-        weight: "light",
-        size: 14.4pt,
-        subtitle
+            font: use-font,
+            weight: "light",
+            size: 14.4pt,
+            subtitle
         )
     }
     v(1.5cm)
