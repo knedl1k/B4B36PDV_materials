@@ -42,10 +42,21 @@ CTU FEE Subject Parallel and distributed computing
 │   │   ├── 03-rmi.typ
 │   │   └── ...
 │   │
-│   └── 99-bibliography.typ    # Seznam literatury a zdrojů
+│   └── 99-bibliography.bib    # Seznam literatury a zdrojů
+│
+├── template/                  # Templaty
+│   ├── template.typ           # Template dokumentu
+│   └── front.typ              # Template titulní strany
 │
 ├── .gitignore                 # Soubor specifikující, co se nemá verzovat
 ├── LICENSE                    # Licence díla (např. Creative Commons)
 ├── main.typ                   # Hlavní soubor projektu, který vše spojuje
 └── README.md                  # Popis projektu, návod na sestavení
+```
+## Compilation Instructions
+Download CTU font *Technika* from here: https://campuscvut.sharepoint.com/:f:/r/sites/inforek-ma/ma_GrafickyManual/Jednotny%20vizualni%20styl%20CVUT/Fonty?csf=1&web=1&e=pVrmQ4 (SSO login) and put it in `/assets/fonts/`.
+
+Then compile using
+```
+typst watch main.typ --font-path ~/B4B36PDV_materials/assets/fonts
 ```
