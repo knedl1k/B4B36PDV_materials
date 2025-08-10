@@ -10,7 +10,7 @@
 ) = {
     set align(center)
     v(2.5cm)
-    // Uni and faculty
+    // university
     text(
         font: use-font,
         weight: "regular",
@@ -18,6 +18,7 @@
         university
     )
     v(0.1mm)
+    // faculty
     text(
         font: use-font,
         weight: "regular",
@@ -51,6 +52,7 @@
         "Praha, " + str(date)
     )
     v(1.5cm)
+    // uni logo
     if logo-path != "" {
         image(logo-path, width: 50%)
     }
