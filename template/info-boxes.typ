@@ -1,0 +1,104 @@
+#import "./colors.typ": *
+
+#let info-settings = (
+    info:(
+        prefix:none,
+        icon:"circle-info",
+        fill_color:ugent-blue.lighten(90%),
+        stroke_color:ugent-blue,
+    ),
+    definition:(
+        prefix:[#smallcaps[*Definice*]#smallcaps[:]],
+        icon:"pencil",
+        fill_color:caribbean-current.lighten(90%),
+        stroke_color:caribbean-current,
+    ),
+    question:(
+        prefix:none,
+        icon:"circle-question",
+        fill_color:proper-purple.lighten(90%),
+        stroke_color:proper-purple,
+    ),
+    important:(
+        prefix:none,
+        icon:"circle-exclamation",
+        fill_color:rgb("#228B22").lighten(90%),
+        stroke_color:rgb("#228B22").darken(20%),
+    ),
+    conclusion:(
+        prefix:none,
+        icon:"lightbulb-solid",
+        fill_color:earth-yellow.lighten(90%),
+        stroke_color:earth-yellow,
+    ),
+    good:(
+        prefix:none,
+        icon:"circle-check",
+        fill_color:rgb("#FFD700").lighten(90%),
+        stroke_color:rgb("#FFD700").darken(20%),
+    ),
+    note:(
+        prefix:[ *Poznámka:* ],
+        icon:"note-sticky",
+        fill_color:rgb("#FFD700").lighten(90%),
+        stroke_color:rgb("#FFD700").darken(20%),
+    ),
+);
+
+#let info-stroke(kind:"good") = info-settings.at(kind).stroke_color
+
+#let info-image(kind:"info", ..args) = {
+    let settings = info-settings.at(kind);
+    image(
+        "../assets/images/" + settings.icon + ".svg", ..args,
+        alt:settings.icon,
+    )
+}
+
+#let info-box(body, kind:"info", radius:5pt, footer:none, icon:true) = {
+    let settings = info-settings.at(kind);
+    let extra = if footer == none {
+        none
+    } else {
+        align(right)[
+            #set par(leading:0pt)
+            #set text(size:10pt)
+            #v(-8pt)
+            #underline[#footer]
+        ]
+    }
+
+    box(
+        width:0.8fr,
+        fill:settings.fill_color,
+        stroke:1pt + settings.stroke_color,
+        radius:radius,
+        inset:0pt,
+    )[
+        #let contents = if icon {
+            (
+                image("../assets/images/" + settings.icon + ".svg", width:24pt),
+                {
+                    settings.prefix
+                    body
+                    extra
+                }
+            )
+        } else {
+            (
+                {
+                    settings.prefix
+                    body
+                    extra
+                },
+            )
+        }
+        #table(
+            columns:if icon { (38pt, 1fr) } else { 1 },
+            inset:8pt,
+            stroke:none,
+            align:horizon,
+            ..contents,
+        )
+    ]
+}
