@@ -11,7 +11,7 @@
     }
 
     show outline.entry.where(level: 3): it => {
-        block(spacing: 0pt, inset: (left: 30pt))[
+        block(spacing: 6pt, inset: (left: 12pt))[
         #v(2pt)
         #it
         #v(-3pt)
