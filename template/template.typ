@@ -27,7 +27,27 @@
         it
     }
 
+    show raw.where(block: true): it => {
+      set par(justify: false)
+      set align(left)
+      block(
+        width: 100%,
+        fill: light-grey,
+        spacing: 0pt,
+        outset: 0pt,
+        inset: 8pt,
+        radius: 5pt,
+        above: 13pt,
+        below: 13pt,
+      )[#it]
+    }
 
-    toc()
-    body
+    set math.equation(numbering: "(1)")
+
+    set page(numbering: "I")
+    counter(page).update(1)
+    toc() // render outline / table of contents
+    body // render rest of the document 
 }
+
+#let codeblock(filename) = raw(read(filename), block: true, lang: filename.split(".").at(-1)) // show codeblock from a destionation with syntax highlighting

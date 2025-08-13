@@ -4,4 +4,5 @@
 #let federal-blue = rgb(31, 28, 92)
 #let earth-yellow = rgb(224, 164, 88)
 #let atomic-tangerine = rgb(222, 143, 110)
-#let light-grey = rgb(120, 120, 120)
+#let grey = rgb(120, 120, 120)
+#let light-grey = luma(248)

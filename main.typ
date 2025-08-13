@@ -29,13 +29,13 @@
     "content/02-java/06-leader.typ",
 )
 
-
-
 #pagebreak()
 
 // #include "content/00-preface.typ"
 // #pagebreak()
 
+#set page(numbering: "1")
+#counter(page).update(1)
 #for ch in chapters {
     include ch
     pagebreak()
