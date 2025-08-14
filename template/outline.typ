@@ -4,17 +4,17 @@
     show outline.entry.where(level: 2): it => {
         box(inset: (left: 10pt))[
             #set par(hanging-indent: 15pt)
-            #v(-4pt)
+            // #v(-4pt)
             #it
-            #v(2pt)
+            // #v(4pt)
         ]
     }
 
     show outline.entry.where(level: 3): it => {
         block(spacing: 6pt, inset: (left: 12pt))[
-        #v(2pt)
+        // #v(2pt)
         #it
-        #v(-3pt)
+        // #v(-2pt)
         ]
     }
 
