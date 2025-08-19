@@ -151,10 +151,10 @@ bloky paměti.
 
 1\. verze bude rychlejší. 
 // TODO: dodělat celou sekci, 1:09:00
-// #figure(
-//     image("../../drawing.svg", width:80%),
-//     caption: [Zjednodušený nákres procesoru],
-// )
+#figure(
+    image("../../assets/images/cache_diagram.svg", width:100%),
+    caption: [Zjednodušený nákres CPU],
+)
 
 Když pro data půjdeme přímo do registrů, potrvá to 0-1 cyklus. Když data budeme načítat z L1 paměti, pohybujeme se 1-4 
 cykly. U L2 paměti nízké desítky, zhruba 7-20 cyklů. U L3 řekněme 40 cyklů procesoru. A finálně u RAM to potrvá zhruba 
