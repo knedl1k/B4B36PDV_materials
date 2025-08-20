@@ -51,3 +51,8 @@
 }
 
 #let codeblock(filename) = raw(read(filename), block: true, lang: filename.split(".").at(-1)) // show codeblock from a destionation with syntax highlighting
+
+#let todo(msg) = {
+  counter("todo").step()
+  [#text(fill: red, weight: "bold")[TODO: #msg]]
+}
