@@ -31,11 +31,12 @@
 
 #pagebreak()
 
-// #include "content/00-preface.typ"
-// #pagebreak()
-
 #set page(numbering: "1")
 #counter(page).update(1)
+
+#include "content/00-preface.typ"
+#pagebreak()
+
 #for ch in chapters {
     include ch
     pagebreak()
