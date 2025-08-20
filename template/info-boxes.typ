@@ -50,7 +50,7 @@
 #let info-image(kind:"info", ..args) = {
     let settings = info-settings.at(kind);
     image(
-        "../assets/images/" + settings.icon + ".svg", ..args,
+        "../assets/images/info-boxes/" + settings.icon + ".svg", ..args,
         alt:settings.icon,
     )
 }
@@ -77,7 +77,7 @@
     )[
         #let contents = if icon {
             (
-                image("../assets/images/" + settings.icon + ".svg", width:24pt),
+                image("../assets/images/info-boxes/" + settings.icon + ".svg", width:24pt),
                 {
                     settings.prefix
                     body
