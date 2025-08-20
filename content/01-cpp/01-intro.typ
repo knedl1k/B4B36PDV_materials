@@ -220,4 +220,4 @@ potřebná, je nutná kvůli rozložení dat v paměti.])
 - https://www.cs.cmu.edu/~15418/schedule.html. Kurz z Carnegie Mellon University s podobnými tématy, zpracovaný více do hloubky.
 - https://www.youtube.com/watch?v=eanvgGt-D1o. Stará nahrávka první přednášky výše uvedeného kurzu.
 - https://curiouscoding.nl/posts/cpu-benchmarks/. Benchmarky CPU cache odezvy.
-- http://gotw.ca/publications/concurrency-ddj.htm. "The Free Lunch Is Over" od Herba Suttera. Článek vysvětlující proč je paralelismus dnes odpovědí na otázku zvyšeování výkonu.
+- http://gotw.ca/publications/concurrency-ddj.htm. "The Free Lunch Is Over" od Herba Suttera. Článek vysvětlující proč je paralelismus dnes odpovědí na otázku zvyšování výkonu.
