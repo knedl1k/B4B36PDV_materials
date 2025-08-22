@@ -1,0 +1,29 @@
+RAM.width: 800
+RAM <-> CPU: {style.animated: true}
+
+CPU: {
+  Procesor 0: {
+    core
+    L1
+    L2.width: 120
+    *.style.font-size: 20
+  }
+  Procesor 1: {
+    core
+    L1
+    L2.width: 120
+    *.style.font-size: 20
+  }
+  Procesor 2: {
+    core
+    L1
+    L2.width: 120
+    *.style.font-size: 20
+  }
+  L3 cache.width: 400
+  L3 cache <-> Procesor 0: {style.animated: true}
+  L3 cache <-> Procesor 1: {style.animated: true}
+  L3 cache <-> Procesor 2: {style.animated: true}
+  *.style.font-size: 20
+}
+*.style.font-size: 20

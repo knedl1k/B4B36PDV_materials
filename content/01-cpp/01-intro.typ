@@ -160,14 +160,26 @@ Když pro data půjdeme přímo do registrů, potrvá to 0-1 cyklus. Když data 
 cykly. U L2 paměti nízké desítky, zhruba 7-20 cyklů. U L3 řekněme 40 cyklů procesoru. A finálně u RAM to potrvá zhruba 
 400 cyklů. Tedy pokud pro data půjdeme až do RAM, prakticky jsme prohráli a nedocílíme velkého zrychlení.
 
-// Hardwarová vlákna (MIMD)
-// Multiple Instruction, Multiple Data. Což znamená, že máme možnost vykonávat různé instrukce na jednotlivých jádrech 
-// procesoru s různými daty.
+=== Hardwarová vlákna (MIMD)
+Multiple Instructions, Multiple Data. Což znamená, že máme možnost vykonávat různé instrukce na jednotlivých jádrech 
+procesoru s různými daty. O tento přístup se budeme primárně zajímat.
+#figure(
+    image("../../assets/images/MIMD.svg", width:25%),
+    caption: [MIMD diagram @MIMD.],
+)
 
-// SIMD
-// Single Instruction, Multiple Data. 
 
-Proč je pro nás architektura procesoru důležitá? Mějme příklad:
+=== SIMD
+Single Instruction, Multiple Data. Využívá se primárně na grafických kartách, ale již se můžeme setkat s vektorovou 
+jednotkou i na procesorech. Zmenšíme kontrolní obvody, dáme několik ALU jednotek vedle sebe a budeme pouštět stejnou 
+operaci na daném množství dat z paměti. Následně výsledná data jako blok zapíšu dále do paměti. Tím se vyřeší problém 
+velké režie okolo dodávaná dat do procesoru a saturace výpočetních jednotek. 
+#figure(
+    image("../../assets/images/SIMD.svg", width:25%),
+    caption: [SIMD diagram @SIMD.],
+)
+== Proč je CPU architektura relevantní?
+Mějme příklad:
 ```cpp
 float array[SIZE];
 float sum = 0.0f;

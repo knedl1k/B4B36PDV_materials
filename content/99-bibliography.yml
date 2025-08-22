@@ -1,6 +1,22 @@
 rupp_trend:
   type: Web
-  title: 50 Years of Microprocessor Trend Data
+  title: "50 Years of Microprocessor Trend Data"
   author: ["Rupp, Karl"]
   date: 2021
   url: { value: https://github.com/karlrupp/microprocessor-trend-data, date: 2025-08-10 } # YYYY-MM-DD
+
+SIMD:
+  type: Web
+  title: "Single instruction, multiple data"
+  author: ["Vadikus"]
+  date: 2015
+  url: { value: https://commons.wikimedia.org/wiki/File:SIMD2.svg, date: 2025-08-22 }
+  note: "[adapted from the original, CC BY-SA 4.0]" #! vyřešit zmíňku o změně fontu
+
+MIMD:
+  type: Web
+  title: "Single instruction, multiple data"
+  author: ["Cburnett, I"]
+  date: 2007
+  url: { value: https://commons.wikimedia.org/wiki/File:MIMD.svg, date: 2025-08-22 }
+  note: "[adapted from the original, CC BY-SA 4.0]" #! vyřešit zmíňku o změně fontu
