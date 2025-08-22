@@ -15,9 +15,12 @@ CTU FEE Subject Parallel and distributed computing
 │
 ├── assets/                    
 │   ├── images/                # all types of images
+│   │   ├── info-boxes/        # icons used within info boxes
+│   │   │   ├── circle-info.svg
+│   │   │   └── ...
 │   │   ├── a.svg
-│   │   └── b.png
-│   │
+│   │   ├── b.png
+│   │   └── ...
 │   │
 │   └── code/                  # code examples used in document
 │       ├── cpp/
@@ -28,7 +31,7 @@ CTU FEE Subject Parallel and distributed computing
 │           └── 02_socket_client.java
 │
 ├── content/                   # main directory
-│   ├── 00-preface.typ         # preface, acknowledgments, technologies
+│   ├── 00-preface.typ         # preface, acknowledgments, used technologies
 │   │
 │   ├── part-1-cpp/            # multithreading in C++
 │   │   ├── 01-intro-parallel.typ
