@@ -56,3 +56,10 @@
   counter("todo").step()
   [#text(fill: red, weight: "bold")[TODO: #msg]]
 }
+
+#let imageonside(lefttext, rightimage, bottomtext: none, marginleft: 0em, margintop: 0.5em) = {
+  set par(justify: true)
+  grid(columns: 2, column-gutter: 1em, lefttext, rightimage)
+  set par(justify: false)
+  block(inset: (left: marginleft, top: -margintop), bottomtext)
+}
